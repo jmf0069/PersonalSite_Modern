@@ -1,4 +1,5 @@
 import React from "react";
+import Panel from "../Panel/Panel";
 
 const About = () => {
   return (
@@ -14,14 +15,28 @@ const About = () => {
           below for you to get to know me better.
         </p>
       </div>
-      <div className="container mx-auto px-11 text-center mt-28">
-        <h2>what i enjoy:</h2>
-        {/* <div>lorem ipsum</div> */}
-        <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-6 lg:gap-20">
-          <div>Shotgun</div>
-          <div>Video Games</div>
-          <div>Cinema??</div>
-          <div>Music??</div>
+      <div className="container mx-auto px-11 text-center mt-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-20">
+          <Panel
+            id="1"
+            head="Auburn University Clay Shooting Team"
+            desc="I've been shooting shotguns competitively since 2018. As a member and Range Safety Officer of the Auburn University Clay Shooting Team, we participate in collegiate-level competitions (ACUI, SCTP) all across the Southeast. It's a great way to spend the weekends!"
+          />
+          <Panel
+            id="1"
+            head="Auburn University Clay Shooting Team"
+            desc="I've been shooting shotguns competitively since 2018. As a member and Range Safety Officer of the Auburn University Clay Shooting Team, we participate in collegiate-level competitions (ACUI, SCTP) all across the Southeast. It's a great way to spend the weekends!"
+          />
+          <Panel
+            id="1"
+            head="Auburn University Clay Shooting Team"
+            desc="I've been shooting shotguns competitively since 2018. As a member and Range Safety Officer of the Auburn University Clay Shooting Team, we participate in collegiate-level competitions (ACUI, SCTP) all across the Southeast. It's a great way to spend the weekends!"
+          />
+          <Panel
+            id="1"
+            head="Auburn University Clay Shooting Team"
+            desc="I've been shooting shotguns competitively since 2018. As a member and Range Safety Officer of the Auburn University Clay Shooting Team, we participate in collegiate-level competitions (ACUI, SCTP) all across the Southeast. It's a great way to spend the weekends!"
+          />
         </div>
       </div>
     </section>
