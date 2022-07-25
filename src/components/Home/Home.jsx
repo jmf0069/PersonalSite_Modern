@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center">
       <img
-        className="absolute w-full h-full object-cover"
+        className="absolute min-w-screen min-h-screen w-full h-full object-cover"
         src={bg}
         alt="Mountain"
       />
