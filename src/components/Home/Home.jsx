@@ -1,31 +1,53 @@
-import React, { useContext, useRef } from "react";
+import React from "react";
 import bg from "../../images/bg__home7.jpg";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
 import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
+import "./Home.css";
+import { Parallax } from "react-scroll-parallax";
 
 const Home = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center">
+    <Parallax
+      speed={-10}
+      className="min-w-screen min-h-screen w-full h-full flex flex-col z-10 items-center justify-center"
+    >
       <img
-        className="absolute min-w-screen min-h-screen w-full h-full object-cover"
+        className="absolute min-w-screen min-h-screen w-full h-full"
         src={bg}
         alt="Mountain"
       />
+
       <div className="p-12 font-bold z-10 text-white drop-shadow-[0_5px_3px_rgba(0,0,0,0.6)] text-center flex-1 flex items-center justify-center flex-col">
-        <h1 className="mb-1 text-4xl xl:text-5xl">Hello,</h1>
-        <h2 className="mb-6 text-2xl xl:text-3xl tracking-tight">
+        <h1 className="mb-1 text-4xl xl:text-5xl fade-in">Hello,</h1>
+
+        <h2 className="mb-6 text-2xl xl:text-3xl tracking-tight fade-in-2">
           my name is jake.
         </h2>
-        <div className="absolute justify-center align-center inset-x-0 bottom-32">
-          <GitHubIcon className="mx-2 xl:scale-125 xl:mx-4" />
-          <LinkedInIcon className="mx-2 xl:scale-125 xl:mx-4" />
-          <FacebookIcon className="mx-2 xl:scale-125 xl:mx-4" />
+
+        <div className="absolute justify-center align-center inset-x-0 bottom-32 fade-in-3">
+          <GitHubIcon
+            className="mx-2 xl:scale-125 xl:mx-4 icon"
+            onClick={() => window.open("https://github.com/jmf0069", "_blank")}
+          />
+          <LinkedInIcon
+            className="mx-2 xl:scale-125 xl:mx-4 icon"
+            onClick={() =>
+              window.open("https://www.linkedin.com/in/jacobmfarley/", "_blank")
+            }
+          />
+          <InstagramIcon
+            className="mx-2 xl:scale-125 xl:mx-4 icon"
+            onClick={() =>
+              window.open("https://www.instagram.com/jakemfarley", "_blank")
+            }
+          />
         </div>
-        <KeyboardDoubleArrowDownIcon className="absolute bottom-20 justify-center align-center scale-110 xl:scale-125" />
+
+        <KeyboardDoubleArrowDownIcon className="absolute bottom-20 justify-center align-center scale-110 xl:scale-125 fade-in-3" />
       </div>
-    </div>
+    </Parallax>
   );
 };
 
