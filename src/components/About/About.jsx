@@ -1,14 +1,14 @@
 import React from "react";
-import { Parallax } from "react-scroll-parallax";
-import Contact from "../Contact/Contact";
+import { Parallax, ParallaxBanner } from "react-scroll-parallax";
+import Resume from "../Resume/Resume";
 import Panel from "../Panel/Panel";
 
 const About = () => {
   return (
-    <Parallax
-      translateY={[0, -100]}
+    <ParallaxBanner
+      speed={20}
       className={
-        "absolute w-full flex flex-col bg-white py-20 text-3xl md:text-4xl mb-60 overflow-hidden"
+        "absolute mx-0 w-full flex flex-col bg-white py-10 text-3xl md:text-4xl overflow-hidden pb-20"
       }
     >
       <div className="container mx-auto px-11">
@@ -46,7 +46,7 @@ const About = () => {
           />
         </div>
       </div>
-    </Parallax>
+    </ParallaxBanner>
   );
 };
 

@@ -10,8 +10,8 @@ import { Parallax } from "react-scroll-parallax";
 const Home = () => {
   return (
     <Parallax
-      speed={-10}
-      className="min-w-screen min-h-screen w-full h-full flex flex-col z-10 items-center justify-center"
+      speed={-40}
+      className="min-w-screen min-h-screen w-full h-full flex flex-col z-10 m-0 items-center justify-center"
     >
       <img
         className="absolute min-w-screen min-h-screen w-full h-full"
