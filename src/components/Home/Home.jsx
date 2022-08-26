@@ -23,7 +23,7 @@ const Home = () => {
             my name is jake.
           </h2>
         </div>
-        <div className="pt-60">
+        <div className="pt-60 md:pt-60">
           <div className="justify-center align-center flex flex-row inset-x-0 bottom-32 fade-in-3">
             <GitHubIcon
               className="mx-2 xl:scale-125 xl:mx-4 icon"

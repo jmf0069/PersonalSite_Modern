@@ -5,3 +5,4 @@ const WorkExperience = () => {
     <div className=""></div>
   </div>;
 };
+export default WorkExperience;
