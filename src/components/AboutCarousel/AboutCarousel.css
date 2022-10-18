@@ -1,0 +1,27 @@
+.inner-carousel {
+  display: flex;
+  /* margin-left: 525px; */
+  margin-left: calc(50vw - 25rem / 2);
+  /* width: 164vw; */
+  width: calc(150vw + 25rem / 2);
+}
+
+.item {
+  min-height: 40rem;
+  min-width: 30rem;
+  pointer-events: none;
+  text-align: center;
+}
+
+.carousel {
+  cursor: grab;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 768px) {
+  .inner-carousel {
+    /* width: 222vw; */
+    width: calc(175vw + 25rem / 2);
+  }
+}

@@ -1,12 +1,13 @@
 import React from "react";
 import Resume from "../Resume/Resume";
 import Panel from "../Panel/Panel";
+import AboutCarousel from "../AboutCarousel/AboutCarousel";
 
 const About = () => {
   return (
-    <div className="bg-white min-w-screen w-full h-full">
-      <div className="container mx-auto px-11">
-        <p className="leading-tight max-w-5xl mx-auto text-4xl tracking-tight pt-10">
+    <div className="bg-white min-w-screen w-full h-full -mt-10">
+      <div className="relative container mx-auto px-11">
+        <p className="leading-tight max-w-5xl mx-auto text-4xl tracking-tight pt-20">
           <strong>
             I'm a Computer Science student at{" "}
             <span className="text-orange-400">Auburn</span>{" "}
@@ -16,7 +17,8 @@ const About = () => {
           below for you to get to know me better.
         </p>
       </div>
-      <div className="container mx-auto px-11 text-center mt-10">
+      <AboutCarousel />
+      {/* <div className="container mx-auto px-11 text-center mt-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 pb-20">
           <Panel
             id="1"
@@ -39,7 +41,7 @@ const About = () => {
             desc="I've played video games since I was 6 years old with a Gameboy Advance and a PlayStation 2. While I don't have as much free-time to enjoy games like I used to, I try to stay up-to-date with the newest titles and enjoy them when I can."
           />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

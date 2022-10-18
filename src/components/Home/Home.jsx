@@ -15,15 +15,14 @@ const Home = () => {
         alt="Mountain"
       />
 
-      <div className="pt-80 p-12 font-bold text-white drop-shadow-[0_5px_3px_rgba(0,0,0,0.6)] text-center flex-1 flex items-center justify-center align-center flex-col">
-        <div className="">
+      <div className="pt-80 p-12 font-bold text-white drop-shadow-[0_5px_3px_rgba(0,0,0,0.6)] flex-1 flex flex-col">
+        <div className="pointer-events-none">
           <h1 className="mb-1 text-4xl xl:text-5xl fade-in">Hello,</h1>
-
           <h2 className="mb-6 text-2xl xl:text-3xl tracking-tight fade-in-2">
             my name is jake.
           </h2>
         </div>
-        <div className="pt-60 md:pt-60">
+        <div className="mt-60">
           <div className="justify-center align-center flex flex-row inset-x-0 bottom-32 fade-in-3">
             <GitHubIcon
               className="mx-2 xl:scale-125 xl:mx-4 icon"
